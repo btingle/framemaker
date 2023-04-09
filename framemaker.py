@@ -123,8 +123,8 @@ def generate_pieces_geometry(yscale, thickness):
                     (0, cxspan), (0, thickness*2), (xspan*0.25, thickness*2), (xspan*0.25, thickness), (0, thickness)]
     cover_side   = [cover_side]
 
-    xspan = ysspan
-    cxspan = yspan
+    xspan = ysspan + pref_block_width//2
+    cxspan = yspan + pref_block_width//2
     cover_corner =  [(0, 0), (xspan, 0), (xspan, thickness), (xspan*0.75, thickness), (xspan*0.75, thickness*2), (xspan, thickness*2), (xspan, cxspan),
                     (0, cxspan), (0, thickness*2), (xspan*0.25, thickness*2), (xspan*0.25, thickness), (0, thickness)]
     cover_corner = [cover_corner]
